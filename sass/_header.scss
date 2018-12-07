@@ -1,0 +1,87 @@
+.header {
+  @include link-neutral;
+  border-bottom: 1px solid $borderblack;
+  margin-bottom: 2rem;
+  position: relative;
+
+  @include breakpoint($desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+}
+
+.header__name {
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -3px;
+  font-size: 2.875rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header__subtitle {
+  font-size: 1.125rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header__list {
+  @include list-reset;
+  display: flex;
+}
+
+.header__list-item {
+  &:not(:last-child) {
+    @include breakpoint($upto-tablet) {
+      margin-right: 1rem;
+    }
+    @include breakpoint($desktop) {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.header__link {
+  font-weight: 100;
+  display: block;
+  line-height: 4.625rem;
+  height: 4.625rem;
+
+  @include breakpoint($desktop) {
+    font-size: 1.125rem;
+  }
+
+  header &--active {
+    color: $bblue;
+  }
+}
+
+.header--resume {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.saybassam {
+  width: 1.875rem;
+  height: 1.875rem;
+  background: $bblue;
+  text-align: center;
+  line-height: 1.875rem;
+  border-radius: 50%;
+  color: white;
+  transform: rotate(-10deg);
+  position: absolute;
+  z-index: 1;
+  top: -0.75rem;
+  left: -0.75rem;
+
+  &.active {
+    background: #2f83d6;
+  }
+
+  &:active {
+    transform: translate(1px, 1px) rotate(-10deg);
+  }
+}

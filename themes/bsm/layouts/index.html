@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{ template "theme/partials/head.html" . }}
+</head>
+
+<body class="home">
+  {{ template "theme/partials/header.html" . }} {{ template "theme/partials/banner.html" }}
+  <main>
+    {{ template "theme/partials/list.html" . }}
+  </main>
+  {{ template "theme/partials/footer.html" . }} {{ template "theme/partials/scripts.html" }}
+</body>
+
+</html>

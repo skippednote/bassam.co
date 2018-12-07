@@ -1,0 +1,45 @@
+.articles__list {
+  @include container;
+}
+
+.articles__title {
+  @include heading-underlined;
+  margin-top: 4rem;
+}
+
+.articles__list-item {
+  margin-bottom: 5rem;
+}
+
+.articles__list-item__link {
+  @include link-neutral;
+
+  &:hover {
+    color: $bblue;
+  }
+}
+
+.articles__list-item__title {
+  font-size: 1.375rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.articles__list-item__date {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.articles__list-item__button {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+
+  .arrow {
+    transition: transform 0.5s ease-in-out;
+    display: inline-block;
+  }
+
+  &:hover span {
+    transform: translateX(5px);
+  }
+}

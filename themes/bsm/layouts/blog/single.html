@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{ template "theme/partials/head.html" . }}
+</head>
+
+<body>
+  {{ template "theme/partials/header.html" . }}
+
+  <h1 class="page__title page__tile--no-margin">{{ .Title }}</h1>
+  <div class="page__meta">
+    <div class="page__date">
+      <span>{{ .Date.Format "January" }}</span>
+      <span>{{ .Date.Format "2" }}</span>,&nbsp;
+      <span>{{ .Date.Format "2006" }}</span>
+    </div>
+  </div>
+  <div class="page__content">{{ .Content }}</div>
+
+  {{ template "theme/partials/footer.html" . }} {{ template "theme/partials/scripts.html" }}
+</body>
+
+</html>

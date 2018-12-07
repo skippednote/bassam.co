@@ -1,0 +1,51 @@
+.button {
+  background: #39f;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  font-weight: 100;
+  transition: transform 0.25s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    background: #198cff;
+    transform: translateY(-3px);
+  }
+}
+
+.page__title {
+  @include heading;
+  color: $bblue;
+}
+
+.page__tile--no-margin {
+  margin-bottom: 0;
+}
+
+.page__summary,
+.page__content {
+  @include container;
+}
+
+.page__summary {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.page__content {
+  margin-top: 3rem;
+
+  @include breakpoint($from-tablet) {
+    margin-top: 4rem;
+  }
+
+  h3 {
+    svg {
+      fill: $bblue;
+    }
+  }
+}
+
+.page__offline {
+  margin-top: 1rem;
+}

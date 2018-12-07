@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-uglify": "^3.0.0",
+    "prettier": "^1.9.2",
+    "workbox-build": "^2.1.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-svgo": "^1.2.5"
+  }
+}

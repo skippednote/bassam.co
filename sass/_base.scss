@@ -1,0 +1,65 @@
+html {
+  border: 10px solid $grey-0;
+
+  @include breakpoint($desktop) {
+    border: 20px solid $grey-0;
+  }
+}
+
+body {
+  max-width: 60rem;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: $karla;
+  color: $copy;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $bblue;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+blockquote {
+  margin-left: 0;
+  background: $grey-0;
+  padding: 0.125rem 0.5rem;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.3;
+  font-size: 14px;
+  font-family: Consolas, monaco, monospace;
+  border: 1px solid $borderblack;
+}
+
+hr {
+  border: none;
+  background: $borderblack;
+  height: 1px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint($desktop) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+svg {
+  @include svg;
+
+  .page__summary & {
+    @include svg--large;
+  }
+}

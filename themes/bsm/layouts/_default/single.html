@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{ template "theme/partials/head.html" . }}
+</head>
+
+<body class={{ .Title | lower }}>
+  {{ template "theme/partials/header.html" . }}
+
+  <main class="page">
+    <h1 class="page__title">{{ .Title }}</h1>
+    {{ .Content }}
+  </main>
+
+  {{ template "theme/partials/footer.html" . }} {{ template "theme/partials/scripts.html" }}
+</body>
+
+</html>

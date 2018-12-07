@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{ template "theme/partials/head.html" . }}
+</head>
+
+<body>
+  {{ template "theme/partials/header.html" . }}
+
+  <h1 class="page__title">Blog</h1>
+  <section class="articles__list">
+    {{ range where $.Data.Pages ".Type" "blog" }}
+    <div class="articles__list-item">
+      <h3 class="articles__list-item__title">
+        <a class="articles__list-item__link" href={{ .Permalink }}>
+          {{ .Title }}
+        </a>
+      </h3>
+      <p class="articles__list-item__date">
+        <span>{{ .Date.Format "January" }}</span>
+        <span>{{ .Date.Format "2" }}</span>,&nbsp;
+        <span>{{ .Date.Format "2006" }}</span>
+      </p>
+      <p class="articles__list-item__body">
+        {{ .Summary }}
+      </p>
+      <p class="articles__list-item__button-wrapper">
+        <a href={{ .Permalink }} class="articles__list-item__button">Read More
+          <span class="arrow">→</span>
+        </a>
+      </p>
+    </div>
+    {{ end }}
+  </section>
+
+  {{ template "theme/partials/footer.html" . }} {{ template "theme/partials/scripts.html" }}
+</body>
+
+</html>

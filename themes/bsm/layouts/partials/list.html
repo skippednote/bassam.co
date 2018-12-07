@@ -1,0 +1,33 @@
+<section class="articles">
+  <h2 class="articles__title">From the Blog</h2>
+
+  <section class="articles__list">
+
+    {{ range first 2 (where $.Data.Pages ".Type" "blog") }}
+    <div class="articles__list-item">
+      <h3 class="articles__list-item__title">
+        <a class="articles__list-item__link" href={{ .Permalink }}>
+          {{ .Title }}
+        </a>
+      </h3>
+      <p class="articles__list-item__date">
+        <span>{{ .Date.Format "January" }}</span>
+        <span>{{ .Date.Format "2" }}</span>,&nbsp;
+        <span>{{ .Date.Format "2006" }}</span>
+      </p>
+      <p class="articles__list-item__body">
+        {{ .Summary }}
+      </p>
+      <p class="articles__list-item__button-wrapper">
+        <a href={{ .Permalink }} class="articles__list-item__button">Read More
+          <span class="arrow">→</span>
+        </a>
+      </p>
+    </div>
+    {{ end }}
+    <p>
+      <a href="{{ .Site.BaseURL }}blog/" class="button">Archive</a>
+    </p>
+
+  </section>
+</section>

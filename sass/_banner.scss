@@ -1,0 +1,30 @@
+.banner {
+  font-size: 1.125rem;
+
+  @include breakpoint($desktop) {
+    display: flex;
+  }
+}
+
+.banner__title {
+  color: $bblue;
+}
+
+.banner__image {
+  align-self: center;
+}
+
+.banner__summary {
+  @include breakpoint($from-tablet) {
+    padding-left: 1rem;
+  }
+
+  @include breakpoint($desktop) {
+    flex: 0 60%;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+  }
+}

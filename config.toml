@@ -1,0 +1,9 @@
+baseurl = "https://bassam.co/"
+languageCode = "en-us"
+title = "Bassam Ismail – Front-end Design and Engineering."
+theme = "bsm"
+pygmentsuseclasses = true
+pluralizelisttitles = false
+
+[permalinks]
+blog = "/:section/:year/:month/:title/"

@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/skippednote
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.bassam.co
+  * I am skippednote (https://keybase.io/skippednote) on keybase.
+  * I have a public key with fingerprint 2F7B B785 3756 642C DEA3  B770 C03E D351 E2AF 064F
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ee73a52269f04c59df03530f174e2e3f9f4972784af464502546bb3f05e1d8af0a",
+            "fingerprint": "2f7bb7853756642cdea3b770c03ed351e2af064f",
+            "host": "keybase.io",
+            "key_id": "c03ed351e2af064f",
+            "kid": "0101ee73a52269f04c59df03530f174e2e3f9f4972784af464502546bb3f05e1d8af0a",
+            "uid": "55cd1185828a44f84ba0ccaf75609e00",
+            "username": "skippednote"
+        },
+        "revoke": {
+            "sig_ids": [
+                "a5ef3c1b5066814ee961d6ffba2599ca3bde1c41a8be403217d5570a42ea9fbb0f"
+            ]
+        },
+        "service": {
+            "hostname": "www.bassam.co",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1469595250,
+    "expire_in": 157680000,
+    "prev": "50a4718f3dd02d8c990cf831f0fb45a00dd295a0adff8989413731097cfa8c77",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMJyAnicrZJdbBVFGIZPW9tqFakXBhTOBXshhtZmZndmZ+bECCImQgRRjD9pm9P5
+bTeHs3vc3Z6WNE2MQoPgDwnBcNMgAdNAIjSSmmCj1qIhCAYSkEQj0BACV3JjagVC
+cfYE77x0biYz837v98w788OChlxL3fro7t7p/LW+utPfz/Xn3tz7XDzkiEhtcQpD
+TknXJr1Z6SQtlgLlFBwAAdSaeBy7rs8MQBIzZYCHPWAgQdrVnmEGMeISirhBPsLA
+xcgXwjMAa6goN4A77Y4Jwl4dV+IgTK2ta4gQhGKPYN9HrlSae4IQIIGnlYehdm2Z
+j4wt7IuSrMLCCZ7ojiCye3ZRrOH9h/5/5u6v2WEsFYQUU5dyhAxFggMpubH4gGkA
+MmGi45CXtVUnpaBS0SqMUu0MtzuxrkYlnUWbBL2WO3EKnQ7H2ngSCgx8n0KkNfOh
+8o0R3MWMSRuH0lAiyKnQCHguJApjAjhyNWdGCGCcbuttm1YDWTPPgroPMDAw0GHT
+Sni5Q2Z5VeIojWS02R71pWmlkFGlWyo1qRbF+yZFEYTKPpMtqOo4CaLQKUCrlGmQ
+uULkM8ywi0G7owcrQayLQabAxKfAjqyNrmZhWUoCqfGUAq6ikjEgDfWgAUYgzAFQ
+ymV25soYyihD0CMeBIxIw6kkxMmu9U4YWW/XcvLeLNKgN+Rpf2wDnZ7qeiBX15Jr
+aqzP/m+u5aHWf391//vN91YtvxK/YIZnvmx4Uq49NrVn3YXuV/PbZyeOnOkCV6cW
+/Exnju/Mv/VJc/hBddWlK63y+Vtz+Wn48GOPfnd5MQ1OnXz8kfHom5u/je44sPrv
+p25/uGvor1v73/1418qTizaV3xjbvnRy8KP1L4nJkc6u8ero13O7L06Vl4wtn206
+d7CpZ12n/HFpdHH+6Be7l7z8yvz57sH8zJojaVi63IPU9fo7HXt+bV7YWj67ta1+
+w/5Lb1f+fDDXcPjp8ReXTYiVYyfObtvZeGgHQu/Nt41M/JJcmHxmeHRZlOz7/cC3
+s2Bk49rP2ryNT5w69tqKuz+tuff66kPH9/V8fmNb47N/pMMbznz16abq1tM3TzT/
+A5rMXkg=
+=AFdd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/skippednote
+
+==================================================================
