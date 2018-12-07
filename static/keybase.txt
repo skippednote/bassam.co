@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/skippednote
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bassam.co
+  * I am skippednote (https://keybase.io/skippednote) on keybase.
+  * I have a public key ASAphxmAMk2-WPrj6YCR2yVGwKcp2NXCY2UqzQswGNvU-Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012029871980324dbe58fae3e98091db2546c0a729d8d5c263652acd0b3018dbd4f90a",
+      "host": "keybase.io",
+      "kid": "012029871980324dbe58fae3e98091db2546c0a729d8d5c263652acd0b3018dbd4f90a",
+      "uid": "55cd1185828a44f84ba0ccaf75609e00",
+      "username": "skippednote"
+    },
+    "merkle_root": {
+      "ctime": 1538032871,
+      "hash": "a006d8c3139cbdbb31e130bc23a981c4197cbfec913c26e493839bf54d98a95d7f05e99f5d09a3e9d86bab5a50ec6f075b8cd1bcbefc20c544973fa06d45f8cd",
+      "hash_meta": "97eb1b8bbd52331396697744e81572d27732ab6b86063b844b5d3d73295ab693",
+      "seqno": 3698876
+    },
+    "service": {
+      "entropy": "+Wrl1Y+wNlp91EdrxzAjkvtN",
+      "hostname": "bassam.co",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.7.0"
+  },
+  "ctime": 1538032923,
+  "expire_in": 504576000,
+  "prev": "6bdee2e3fe10cad65c2f178d50f1f83118fa963bd278e32f4462c65c6bcdac0f",
+  "seqno": 32,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKYcZgDJNvlj64+mAkdslRsCnKdjVwmNlKs0LMBjb1PkKp3BheWxvYWTESpcCIMQga97i4/4QytZcLxeNUPH4MRj6ljvSeOMvRGLGXGvNrA/EIKFHG/yiyr8aBEd4Gp96IMVf5L9SWewU+V26tdxb4+qxAgHCo3NpZ8RAJeJjEQELwb2+8UnxqKYGQ1mmXSOoYMNkSAr9lck+zB4VyKBi1/R41WIJ5nWoMeG6s2IgbP1eOg+CD5bEnNDrBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGD77Kb7Y1Xty+WO6wRfG+MUqVZjv6jT4B9hR0YWP6nmo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/skippednote
+
+==================================================================
