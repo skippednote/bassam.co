@@ -1,0 +1,19 @@
+title: Bassam Ismail – Large scale responsive front-end development.
+email: skippednote@gmail.com
+description: OOCSS, JavaScript, Performance and more
+
+
+baseurl: ""
+url: "http://bassam.co"
+permalink: pretty
+limit_posts: 0
+
+author: Bassam Ismail
+
+twitter: skippednote
+github: skippednote
+googleplus: https://plus.google.com/+BassamIsmail
+
+markdown: kramdown
+# gems:
+#   - jekyll-sitemap

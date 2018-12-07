@@ -1,0 +1,16 @@
+
+<section class="section section__pagination">
+	{% if page.next.url %}
+        <p class="pager__item pager__newer">
+            <a href="{{page.next.url}}" title="{{page.next.title}}" class="pager__link">Newer Post</a>
+            <span class="pager__title">{{page.next.title}}</span>
+        </p>
+	{% endif %}
+
+	{% if page.previous.url %}
+        <p class="pager__item pager__older">
+            <a href="{{page.previous.url}}" title="{{page.previous.title}}" class="pager__link">Older Post</a>
+            <span class="pager__title">{{page.previous.title}}</span>
+        </p>
+	{% endif %}
+</section>

@@ -1,0 +1,255 @@
+.dca__icon {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+
+    &:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        border-bottom: none;
+    }
+
+    @include breakpoint($desktop) {
+        position: relative;
+        top: -10px;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+}
+
+$dca--primary: #9B2023;
+$dca--secondary: #9B2023;
+
+.dca {
+    background: $dca--primary;
+
+    a {
+        color: $dca--primary;
+
+        &:hover {
+            color: rgba(black, .5);
+        }
+    }
+
+    .dca__contain {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .dca__footer {
+        background: #4B4949;
+        margin: 0;
+        text-align: center;
+        color: rgba(#FFF, .75);
+        padding: 1rem;
+        font-size: .875rem;
+    }
+
+    .post__header {
+        text-align: center;
+        background: rgba(black, .5) url('../images/dca-masthead.png') no-repeat center top;
+        height: 10rem;
+        text-indent: -9999px;
+        margin-bottom: 0;
+        background-size: 100%;
+
+        @include breakpoint($tablet) {
+            background-size: initial;
+        }
+
+        @include breakpoint($desktop) {
+            background-size: initial;
+        }
+    }
+
+    .dca__icon {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+
+        &:hover {
+            -webkit-filter: grayscale(.5);
+            filter: grayscale(.5);
+        }
+    }
+
+    .site-nav__link {
+        color: white;
+        font-weight: bold;
+    }
+
+    .site-nav__logo {
+        path {
+            fill: white;
+        }
+
+        &:hover {
+            path {
+                fill: rgba(black, .5);
+            }
+        }
+    }
+}
+
+.timeline {
+    padding-bottom: 0;
+
+    @include breakpoint($desktop) {
+        padding-top: 0;
+    }
+
+}
+
+.timeline__list {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    max-width: 96%;
+    margin: auto;
+    padding-top: 3rem;
+
+    @include breakpoint($tablet) {
+        max-width: 1000px;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    @include breakpoint($desktop) {
+        max-width: 1000px;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    &:after {
+          content:  '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 4px;
+          background: rgba(black, .5);
+          margin: 0 auto;
+          z-index: -1;
+    }
+}
+
+.timeline__item {
+    background: rgba(black, .5);
+    margin: 0 auto 3rem;
+    padding: .25rem;
+    border-radius: .25rem;
+    width: 98%;
+
+    @include breakpoint($desktop){
+        width: 48%;
+    }
+}
+
+.timeline__wrapper {
+    background: rgba(white, .875);
+    border-radius: .125rem;
+}
+
+.timeline__title {
+    margin-top: 0;
+}
+
+.timeline__figure {
+    margin-bottom: 0;
+}
+
+.timeline__padder {
+    padding: 1rem;
+    border-radius: .125rem;
+}
+
+.timeline__direction--center {
+    @include breakpoint($desktop){
+        float: none;
+        clear: none;
+        width: 98%;
+    }
+}
+
+.timeline__direction--left {
+    @include breakpoint($desktop){
+        float: left;
+        clear: left;
+    }
+}
+
+.timeline__direction--right {
+    @include breakpoint($desktop){
+        float: right;
+        clear: right;
+    }
+}
+
+.timeline__date {
+    font-size: .875rem;
+    color: rgba(#1A1A1A, .5);
+}
+
+.timeline__item {
+    position: relative;
+}
+
+.timeline__item.timeline__direction--left:after,
+.timeline__item.timeline__direction--left:before {
+    @include breakpoint($desktop){
+        left: 99.2%;
+        top: 1.875rem;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+}
+
+.timeline__item.timeline__direction--left {
+    @include breakpoint($desktop){
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-left-color: rgba(white, .875);
+            border-width: 10px;
+            margin-top: -10px;
+        }
+        &:before {
+            border-color: rgba(0, 0, 0, 0);
+            border-left-color: rgba(0, 0, 0, 0.5);
+            border-width: 16px;
+            margin-top: -16px;
+        }
+    }
+}
+.timeline__item.timeline__direction--right:after,
+.timeline__item.timeline__direction--right:before {
+    @include breakpoint($desktop){
+        right: 99.2%;
+        top: 1.875rem;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+}
+
+.timeline__item.timeline__direction--right {
+    &:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: rgba(white, .875);
+        border-width: 10px;
+        margin-top: -10px;
+    }
+    &:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-right-color: rgba(0, 0, 0, 0.5);
+        border-width: 16px;
+        margin-top: -16px;
+    }
+}

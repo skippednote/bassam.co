@@ -1,0 +1,23 @@
+<div class="section section-halves journal">
+    <div class="clearfix">
+        <h3 class="section__heading">Journal</h3>
+
+        <ul class="bare-list section__list">
+            {% for post in site.posts  limit: 5%}
+            <li class="section__item">
+            <h3 class="section__title">
+                <a class="section__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h3>
+            <time class="section__date">{{ post.date | date: "%b %-d, %Y" }}</time>
+            <span class="space"></span>
+            <a class="section__categories" href="/category/#{{post.categories}}">{{post.categories}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="section__button__wrapper button__wrapper">
+        <a href="/journal" class="button section__button">Archive</a>
+    </div>
+</div>
+

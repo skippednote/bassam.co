@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  <style>
+    .btn {
+      display: none;
+    }
+    .btn:disabled {
+      background: lightblue
+    }
+    .is-active {
+      display: block;
+    }
+  </style>
+
+  {% if page.class  %}
+      <body class={{page.class}}>
+  {% else %}
+    <body>
+  {% endif %}
+
+    {% include header.html %}
+    <div class="contain {{page.class}}__contain">
+        {{ content }}
+    </div>
+    <input type="submit" value="Update" class="btn" disabled>
+    {% include footer.html %}
+    <script>
+      if(navigator.serviceWorker) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(reg) {
+            console.log('Service Worker registration succeded');
+
+            if(!navigator.serviceWorker.controller) {
+              console.log('Not using the service worker.');
+              return;
+            }
+
+            if(reg.waiting) {
+              console.log('waiting')
+              var worker = reg.waiting;
+              update(worker);
+              return;
+            }
+
+            if(reg.installing) {
+              console.log('installing')
+              var worker = reg.installing;
+              worker.addEventListener('statechange', function() {
+                if(worker.state == 'installed') {
+                  update(worker);
+                }
+              })
+              return;
+            }
+
+            reg.addEventListener('updatefound', function() {
+              console.log('normal');
+              var worker = reg.installing;
+              worker.addEventListener('statechange', function() {
+                update(worker);
+              })
+            })
+          }).catch(function(err) {
+            console.log('Service Worker registration failed.');
+          })
+
+          navigator.serviceWorker.addEventListener('controllerchange', function() {
+            console.log('reload');
+            window.location.reload();
+          });
+
+
+
+          function update(worker) {
+            var btn = document.querySelector('.btn');
+            btn.classList.toggle('is-active');
+            btn.disabled = !btn.disabled;
+            btn.addEventListener('click', function(e) {
+              e.preventDefault();
+              worker.postMessage({action: 'skipWaiting'})
+              this.classList.toggle('is-active');
+            })
+
+          }
+      }
+    </script>
+    <script type="text/javascript" src="{{ "/js/script.js" | prepend: site.baseurl }}" async></script>
+
+  </body>
+
+</html>

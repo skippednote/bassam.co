@@ -1,0 +1,71 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bassam Ismail, OOCSS, JavaScript, Meteor">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#272727">
+    {% if page.title %}
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <meta content="{{ page.title }}" property="og:title">
+        <meta content="{{ page.title }}" name="twitter:title">
+    {% else %}
+        <title>{{ site.title }}</title>
+        <meta content="{{ site.title }}" property="og:title">
+        <meta content="{{ site.title }}" name="twitter:title">
+    {% endif %}
+
+    {% if page.description %}
+      <meta content="{{ page.description }}" name="description">
+      <meta content="{{ page.description }}" property="og:description">
+      <meta content="{{ page.description }}" name="twitter:description">
+    {% else %}
+      <meta content="{{ site.description }}" name="description">
+      <meta content="{{ site.description }}" property="og:description">
+      <meta content="{{ site.description }}" name="twitter:description">
+    {% endif %}
+
+    <meta content="{{ site.author }}" name="author">
+    <link rel="author" href="https://plus.google.com/+BassamIsmail">
+
+    <link href="{{ site.googleplus }}"  rel="author">
+    <meta content="{{ site.twitter }}" name="twitter:site">
+    <meta content="{{ site.twitter }}" name="twitter:creator">
+
+    <link href="{{ site.url }}{{ page.url }}" rel="canonical">
+
+    {% if page.title %}
+        <meta content="article" property="og:type">
+    {% else %}
+        <meta content="website" property="og:type">
+    {% endif %}
+    <meta content="summary" name="twitter:card">
+
+    {% if page.url %}
+        <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+        <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">
+    {% endif %}
+
+    {% if page.date %}
+        <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+        <meta content="{{ site.url }}" property="article:author">
+    {% endif %}
+
+    {% if page.image %}
+        <meta property="og:image" content="{{ site.url }}/img/posts/{{ page.image }}">
+        <meta name="twitter:image:src" content="{{ site.url }}/img/posts/{{ page.image }}">
+    {% else %}
+        <meta property="og:image" content="{{ site.url }}/img/logo.png">
+        <meta name="twitter:image:src" content="{{ site.url }}/img/logo.png">
+    {% endif %}
+
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <script>
+        function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
+        loadCSS("/css/style.css")
+    </script>
+</head>

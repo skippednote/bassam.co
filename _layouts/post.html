@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="section section__post post">
+    <div class="section__alpha">
+        <div class="section__header">
+            <time class="section__date">{{ page.date | date: "%b %-d, %Y" }}</time>
+            <h3 class="section__title">
+                <a class="section__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </h3>
+            <a class="section__categories" href="/category/#{{page.categories}}">{{page.categories}}</a>
+        </div>
+        <article class="section__content">
+            {{ content }}
+        </article>
+
+        {% include pagination.html %}
+    </div>
+
+    {% include aside.html %}
+</div>

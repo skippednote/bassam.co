@@ -1,0 +1,26 @@
+<aside class="section__beta">
+    <div class="block rss">
+        <div class="block__header">
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="icon-rss block__icon"></span></a>
+            <h4 class="block__title">RSS Feeds</h4>
+        </div>
+    </div>
+
+    {% include about-block.html %}
+
+    <div class="block hire">
+        <div class="block__header">
+            <h4 class="block__title">Hire Me</h4>
+        </div>
+        <div class="block__description">
+            <a href="mailto:skippednote@gmail.com?subject=Work" class="button button--success">Available for consulation.</a>
+        </div>
+    </div>
+
+    <div class="block category">
+        <div class="block__header">
+            <h4 class="block__title">Categories</h4>
+        </div>
+        {% include category-list.html %}
+    </div>
+</aside>

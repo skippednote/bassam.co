@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/skippednote
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://bassam.co
+  * I am skippednote (https://keybase.io/skippednote) on keybase.
+  * I have a public key with fingerprint D4C7 DDAB E417 E497 33A3  201E 86A6 3FB9 4B16 75F7
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "d4c7ddabe417e49733a3201e86a63fb94b1675f7",
+            "host": "keybase.io",
+            "key_id": "86a63fb94b1675f7",
+            "uid": "55cd1185828a44f84ba0ccaf75609e00",
+            "username": "skippednote"
+        },
+        "service": {
+            "hostname": "bassam.co",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1413089184,
+    "expire_in": 157680000,
+    "prev": "150ef6af96c1a910f652e39b9465fb440d5bdc44a222059dea8614049265dfda",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.3
+Comment: https://keybase.io/crypto
+
+yMHoAnicbZFbSBRhFMdHzTTJ1OgiXZRmoTBsm2/uM4hiYmUoiF0UqbZvZr5Zx8vM
+Njvrhd0wKrspVtAFJEoUokK0oCXsQksXCC01LBPpoeilTCh9UCuhZsTe+l4O3zm/
+8z/nz3meGIMlRM2MlTYHG13vo/ojkwFsjxjXHsQlQ2nAxSBeheaDquleZPpMTbdw
+EVdomVMUKCEacIgWOIqCFEkAxLOQpVRJoCXAcozK4Zl4heF3OmwZCfqRWzPsnP3x
+aIqd/Q8fmC8wjKwAwDM8yUOaVnlagoQsQ5VjWEJABOGAfmTqsAbZtL9K8/mQohsW
+wo9k4nahVpORs7YzfQGyx/thjVt2FvCZhmXIRrWdrrAsn+h0WQ0+B6tDkmdBwCNp
+umL7thtqkenXDB0XgU3KluYoAhpQBC8Ans7EUb1PM5FHcwiGY3nCfs4YVGtLAoZA
+KgtVgZUBFAChsgyJKMG2zTKqRNOEwkiKTNOQJEmCERQEeRbQBC2QLKOoCsQdS4d1
+AxdJe03odRxrXh1aAdP2+zSyfxEWlYAtjo12LoclLEn+d8/Q13isU9i4M+v73V9r
+jx3atyK1ZkPJeOK3S7OPY+MPXqwLbUquNNxFq0PbZnPZ1tPpSYDbkjp84GN3SYQC
+BhhOW1kgY1fCLa4vkyNjn9Y9aG0qzI9d1Qbn6jLiTeNCvzeQPXgjN7WyeK4zb6KL
+Svu8PVqqPjp4y1M83tzz6OFU9FRneBf79mpj90S6kvy7fTQv5jLddr8ta2tX2Dxb
+0DHTu0zOWHN7eV9ZSVzk3dQAeL3jmVj/JuVHeQfX15NknT9zbmgotPhFT0u4MGPv
++PTPe6W7c9Qcl5q5fqBwWmy6Q77K7s0q0stfnhpZio1++HPc3eAKnhRuplx7UlZ+
+Iv96xeaZv+GMDUA=
+=iB78
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/skippednote
+
+==================================================================
