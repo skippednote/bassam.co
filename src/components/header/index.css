@@ -1,3 +1,7 @@
+.header {
+  margin-bottom: 3rem;
+}
+
 .site-title {
   margin-bottom: 0;
   font-size: var(--fs-site-title);
@@ -6,4 +10,12 @@
 .site-title a {
   text-decoration: none;
   color: var(--color-text);
+}
+
+.title-page {
+  font-size: var(--fs-site-title-page);
+}
+
+.title-page a {
+  color: var(--color-link)
 }

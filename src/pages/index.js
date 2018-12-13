@@ -1,11 +1,13 @@
 import React from 'react';
-
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Bio from '../components/bio';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={['bassam', 'frontend', 'drupal', 'react']} />
+    <Bio />
     <p>
       I’m a software engineer living in Kashmir. I work at{' '}
       <a href="https://www.axelerant.com" className="axelerant">
@@ -31,7 +33,7 @@ const IndexPage = () => (
       </a>
       , and find my PGP keys on{' '}
       <a href="https://keybase.io/skippednote">Keybase</a>. I like to blog
-      occasionally and you can read it <a href="/blog">here</a>
+      occasionally and you can read it <Link to="/blog">here</Link>
     </p>
     <p>
       Feel free to drop me an email if you are an NGO or a local agency in need

@@ -2,7 +2,8 @@ html {
   --font-body: 'Open Sans';
   --font-heading: 'Montserrat';
 
-  --fs-site-title: 30px;
+  --fs-site-title: 40px;
+  --fs-site-title-page: 25px;
   --fs-body: 20px;
   --fs-lh: 1.7;
 
@@ -61,4 +62,12 @@ h6 {
 
 .github {
   color: #4078c0;
+}
+
+
+hr {
+  height: 1px;
+    border: none;
+    background: #ddd;
+    margin-bottom: 2rem;
 }
