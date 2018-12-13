@@ -7,6 +7,12 @@
   font-size: var(--fs-site-title);
 }
 
+@media (max-width: 767px) {
+  .site-title {
+    font-size: 30px;
+  }
+}
+
 .site-title a {
   text-decoration: none;
   color: var(--color-text);
