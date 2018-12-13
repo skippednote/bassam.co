@@ -1,0 +1,9 @@
+.site-title {
+  margin-bottom: 0;
+  font-size: var(--fs-site-title);
+}
+
+.site-title a {
+  text-decoration: none;
+  color: var(--color-text);
+}

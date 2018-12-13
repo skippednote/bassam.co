@@ -1,0 +1,64 @@
+html {
+  --font-body: 'Open Sans';
+  --font-heading: 'Montserrat';
+
+  --fs-site-title: 30px;
+  --fs-body: 20px;
+  --fs-lh: 1.7;
+
+  --color-background: #ffffff;
+  --color-text: #3a3745;
+  --color-link: #39f;
+
+  --width-layout: 700px;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--fs-lh);
+}
+
+p {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 3rem;
+  }
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.layout {
+  max-width: 700px;
+}
+
+.axelerant {
+  color: #fc4c02;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.github {
+  color: #4078c0;
+}
