@@ -15,7 +15,7 @@ const IndexPage = () => (
       </a>{' '}
       as an Engineering Manager. In the past, I’ve worked with companies like{' '}
       <a href="https://www.acquia.com">Acquia</a> and{' '}
-      <a href="https://www.acquia.com">Pixoto</a>. I'm also an{' '}
+      <a href="https://www.pixoto.com">Pixoto</a>. I'm also an{' '}
       <a href="https://certification.acquia.com/user/1177954">
         Acquia Certified Drupal 8 Grand Master
       </a>
