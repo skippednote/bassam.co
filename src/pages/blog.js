@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Bio from '../components/bio';
+import PageTitle from '../components/page-title';
 import './blog.css';
 
 const BlogPage = ({
@@ -16,6 +17,7 @@ const BlogPage = ({
       title="Blog"
       keywords={['bassam', 'frontend', 'drupal', 'react', 'blog']}
     />
+    <PageTitle>Blog</PageTitle>
     {blogs.map(({ node: blog }) => (
       <div className="blog-item" key={blog.id}>
         <h3 className="blog-item__title">
