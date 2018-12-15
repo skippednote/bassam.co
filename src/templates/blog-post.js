@@ -20,8 +20,9 @@ export default ({
       <div className="blog-post">
         <h1 className="blog-post__title">{blog.frontmatter.title}</h1>
         <div className="blog-item__meta">
-          <time>{blog.frontmatter.date}</time> &bull; {blog.timeToRead}{' '}
-          {blog.timeToRead > 1 ? 'mins' : 'min'} read
+          <time>{blog.frontmatter.date}</time> <span>&bull;</span>{' '}
+          {blog.timeToRead} {blog.timeToRead > 1 ? 'mins' : 'min'} read{' '}
+          <span>&bull;</span> {blog.frontmatter.category}
         </div>
         <div dangerouslySetInnerHTML={{ __html: blog.html }} />
       </div>
@@ -48,6 +49,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         keywords
+        category
       }
       fields {
         slug

@@ -1,21 +1,25 @@
 .blog-item {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .blog-item__title {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: var(--fs-site-title-page);
-    line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: var(--fs-site-title-page);
+  line-height: 1;
 }
 
 .blog-item__meta {
-    font-size: 70%;
-    color: #7a7a7a;
+  font-size: 70%;
+  color: #7a7a7a;
+}
+
+.blog-item__meta span {
+  padding: 0 0.25rem;
 }
 
 .blog-item__description {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 80%;
 }

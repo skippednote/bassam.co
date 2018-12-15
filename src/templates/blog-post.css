@@ -1,8 +1,8 @@
 .blog-post {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .blog-post__title {
-    font-size: var(--fs-site-title);
-    margin-bottom: 0;
+  font-size: var(--fs-site-title);
+  margin-bottom: 0;
 }

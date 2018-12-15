@@ -24,8 +24,9 @@ const BlogPage = ({
           <Link to={blog.fields.slug}>{blog.frontmatter.title}</Link>
         </h3>
         <div className="blog-item__meta">
-          <time>{blog.frontmatter.date}</time> &bull; {blog.timeToRead}{' '}
-          {blog.timeToRead > 1 ? 'mins' : 'min'} read
+          <time>{blog.frontmatter.date}</time> <span>&bull;</span>{' '}
+          {blog.timeToRead} {blog.timeToRead > 1 ? 'mins' : 'min'} read{' '}
+          <span>&bull;</span> {blog.frontmatter.category}
         </div>
         <p className="blog-item__description">{blog.frontmatter.description}</p>
       </div>
@@ -57,6 +58,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            category
           }
         }
       }

@@ -1,26 +1,26 @@
 .bio {
-    display: flex;
-    align-self: center;
-    margin-bottom: 3rem;
+  display: flex;
+  align-self: center;
+  margin-bottom: 3rem;
 }
 
 .bio img {
-    border-radius: 50%;
-    max-height: 70px;
+  border-radius: 50%;
+  max-height: 70px;
 }
 
 .bio .am {
-    margin-left: 1rem;
-    display: flex;
-    align-self: center;
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    font-size: 90%;
+  margin-left: 1rem;
+  display: flex;
+  align-self: center;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 90%;
 }
 
 .bio li:not(:last-child):after {
-    content: '•';
-    padding: 0 0.5em;
+  content: '•';
+  padding: 0 0.5em;
 }
