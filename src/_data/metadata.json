@@ -3,9 +3,9 @@
   "url": "https://bassam.co",
   "feed": {
     "subtitle": "Thoughts on Front-end Engineering and Engineering Management",
-    "filename": "blog.atom",
-    "path": "/blog.atom",
-    "url": "https://bassam.co/blog.atom",
+    "filename": "rss.xml",
+    "path": "/rss.xml",
+    "url": "https://bassam.co/rss.xml",
     "id": "https://bassam.co"
   },
   "author": {
