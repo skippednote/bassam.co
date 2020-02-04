@@ -1,0 +1,130 @@
+@import 'syntax';
+
+:root {
+  --font-family-system: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  --font-family-code: Menlo, Monaco, monospace;
+  --font-size: 18px;
+  --color-brand: #3399ff;
+  --color-copy: #444;
+  --color-copy-light: #aaa;
+  --width-container: 40rem;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: var(--font-size);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.125rem;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-system);
+  text-rendering: optimizeLegibility;
+  max-width: var(--width-container);
+  margin: auto;
+  line-height: 1.5;
+  color: var(--color-copy);
+}
+
+img,
+svg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-copy);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 2rem auto;
+  max-width: 10rem;
+  border: none;
+  border-top: 1px solid var(--color-copy-light);
+}
+
+.u-list-bare {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.u-list-horizontal {
+  display: flex;
+}
+
+.u-list-horizontal > li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.h-root {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.h-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.s-introduction {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.s-post {
+  margin-bottom: 1.5rem;
+}
+
+.s-meta {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+}
+
+.s-list {
+  margin-bottom: 3rem;
+}
+
+.more {
+  text-align: center;
+}
+
+.copy {
+  margin-bottom: 0;
+}
+
+.h-title-page {
+  margin-bottom: 0;
+  line-height: 1;
+}

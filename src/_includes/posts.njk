@@ -1,0 +1,23 @@
+{% if posts|length %}
+  <ul class="u-list-bare">
+    {% for post in posts %}
+      <li class="s-post">
+        <h3 class="h-title"><a href="{{ post.url | url | clean }}">{% if post.data.title %}{{ post.data.title | markdown | safe }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h3>
+
+        <div class="s-meta">
+          {% for tag in post.data.tags %}
+            <a href="/blog/tags/{{ tag | slug }}" class="tag">{{ tag }}</a>
+          {% endfor %}
+           ·
+          <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        </div>
+
+        <div class="s-summary">
+          {{ post.data.description }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <h3>No blogs found</h3>
+{% endif %}

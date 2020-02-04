@@ -1,0 +1,27 @@
+---
+navtitle: Blog
+layout: layouts/base.njk
+description: 'Bassam Ismail'
+---
+
+{% include "introduction.njk" %}
+
+{% set posts = collections.posts | head(5) %}
+{% if posts|length %}
+  <div class="s-list s-posts">
+    <h3>Blogs</h3>
+    {% include "posts.njk" %}
+    <p class="more"><a href="/links">More <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></a></p>
+  </div>
+{% endif %}
+
+<hr />
+
+{% set links = collections.links | head(5) %}
+{% if links|length %}
+  <div class="s-list s-links">
+    <h3>Links</h3>
+    {% include "links.njk" %}
+    <p class="more"><a href="/links">More <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></a></p>
+  </div>
+{% endif %}

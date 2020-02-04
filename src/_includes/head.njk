@@ -1,0 +1,45 @@
+  <head>
+    {# title #}
+    <title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{% if renderData.title %}{{ renderData.title }}{% else %}{{ title }}{% endif %}{% endif %} · Bassam Ismail{% else %}Bassam Ismail{% endif %}</title>
+    {# end title #}
+
+    {# links #}
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="Bassam Ismail's Atom feed">
+    <link rel="stylesheet" href="/_css/main.css">
+    <link rel="manifest" href="/.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet">
+    {# <link rel="preload" href="/web/css/fonts/lato/2.0/LatoLatin-Regular.supersubset.woff2" as="font" type="font/woff2" crossorigin> #}
+    {# end links #}
+
+
+    {# meta #}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#3399ff">
+    <meta name="description" content="{% if description %}{{ description }} · {% endif %}{% if title %}{{ title }} · {% endif %}Bassam Ismail (skippednote)">
+    <meta name="author" content="Bassam Ismail">
+    {# end meta #}
+
+    {# og #}
+    <meta property="og:site_name" content="Bassam Ismail">
+    <meta property="og:title" content="{% if title %}{{ title }} · Bassam Ismail{% else %}Bassam Ismail{% endif %}">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{{ metadata.author.avatar }}{% endif %}">
+    <meta property="og:description" content="{% if description %}{{ description }} · {% endif %}{% if title %}{{ title }} · {% endif %}Bassam Ismail (skippednote)" />
+    {# end og #}
+
+    {# webmentions #}
+    <link rel="webmention" href="https://webmention.io/bassam.co/webmention" />
+    <link rel="pingback" href="https://webmention.io/bassam.co/xmlrpc" />
+    <link href="mailto:skippednote@gmail.com" rel="me">
+		<link href="https://twitter.com/skippednote" rel="me">
+		<link href="https://github.com/skippednote" rel="me">
+    {# end webmentions #}
+
+    {# scripts #}
+    <script>document.documentElement.className+=' js'</script>
+    {# end scripts #}
+  </head>

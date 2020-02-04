@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+---
+<article itemscope itemtype="http://schema.org/BlogPosting" class="h-entry">
+  <header>
+    <h1 itemprop="headline" class="p-name">{{ title | markdown | safe }}</h1>
+    <p hidden class="p-summary hidden">{{ description}}</p>
+    <p class="meta">
+      Published <time datetime="{{ date | htmlDateString }}" itemprop="datePublished">{{ date | readableDate }}</time>
+      {% if tags %}
+        · tagged with {% for tag in tags %}
+          <a href="/blog/tags/{{ tag | slug }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+      {% endif %}
+    </p>
+  </header>
+  <div itemprop="articleBody" class="e-content">
+    {{ content | safe }}
+  </div>
+  {# <footer>
+    <div>
+      {% if avatars %}
+        {% for avatar in avatars %}
+          <img src="/_img/avatars.jpg" alt="Bassam Ismail" width="96" height="96" loading="lazy">
+        {% endfor %}
+      {% endif %}
+      <p>Posted by {{ metadata.author.name | markdown | safe }}.</p>
+    </div>
+    {% if tweet %}
+      <a href="https://twitter.com/skippednote/status/{{ tweet }}" class="retweet">Retweet this article!</a>
+    {% endif %}
+  </footer> #}
+</article>

@@ -1,0 +1,18 @@
+<ul class="u-list-bare">
+{% for link in linksand %}
+  <li class="s-post">
+    <h3 class="h-title"><a href="{{ link.external_url | url | clean }}">{% if link.data.title %}{{ link.data.title | markdown | safe }}{% else %}<code>{{ link.url }}</code>{% endif %}</a></h3>
+
+    <div class="s-meta">
+      {% for tag in link.data.tags %}
+        <a href="/blog/tags/{{ tag | slug }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+      <time datetime="{{ link.date | htmlDateString }}">{{ link.date | readableDate }}</time>
+    </div>
+
+    <div class="s-summary">
+    	{{ post.data.description }}
+    </div>
+  </li>
+{% endfor %}
+</ul>

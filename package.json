@@ -1,0 +1,54 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "he": "^1.2.0",
+    "html-minifier": "^4.0.0",
+    "husky": "^4.2.1",
+    "json-minify": "^1.0.0",
+    "lint-staged": "^10.0.7",
+    "luxon": "^1.22.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.5",
+    "markdown-it-attrs": "^3.0.1",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-footnote": "^3.0.2",
+    "markdownlint-cli": "^0.21.0",
+    "postcss-cli": "^7.1.0",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-import": "^12.0.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "shx": "^0.3.2",
+    "terser": "^4.6.3",
+    "workbox-cli": "^4.3.1"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "lint": "markdownlint \"src/**/*.md\"",
+    "html": "html-minifier --config-file=.html-minifier.json --input-dir=dist --output-dir=dist --file-ext=html",
+    "css": "postcss src/_css/main.css --output dist/_css/main.css",
+    "js": "shx mkdir -p dist/_js && terser src/_js/main.mjs -cm --module -o dist/_js/main.mjs && terser src/_js/legacy.js -cm -o dist/_js/legacy.js",
+    "json": "json-minify src/.webmanifest > dist/.webmanifest",
+    "sw": "workbox injectManifest workbox-config.js && terser dist/sw.js -cm -o dist/sw.js",
+    "clean": "shx rm -rf -- dist",
+    "build": "npm run clean && npm run css && npm run js && npm run json && eleventy && npm run sw && npm run html",
+    "watch": "npm run build && npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy",
+    "ci": "npm run lint && npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "post-merge": "post-npm-install",
+      "post-rebase": "post-npm-install",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.md": "markdownlint"
+  }
+}

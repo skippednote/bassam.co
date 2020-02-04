@@ -1,0 +1,15 @@
+{
+  "title": "Bassam Ismail",
+  "url": "https://bassam.co",
+  "feed": {
+    "subtitle": "Thoughts on Front-end Engineering and Engineering Management",
+    "filename": "blog.atom",
+    "path": "/blog.atom",
+    "url": "https://bassam.co/blog.atom",
+    "id": "https://bassam.co"
+  },
+  "author": {
+    "name": "Bassam Ismail",
+    "avatar": "asd"
+  }
+}
