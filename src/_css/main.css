@@ -36,6 +36,7 @@ body {
   margin: auto;
   line-height: 1.5;
   color: var(--color-copy);
+  padding: 0.5rem;
 }
 
 img,
@@ -104,12 +105,17 @@ hr {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   margin-top: 4rem;
   margin-bottom: 2rem;
   font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 .s-list {
@@ -127,4 +133,21 @@ hr {
 .h-title-page {
   margin-bottom: 0;
   line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .copy,
+  .l-links {
+    margin-bottom: 1rem;
+  }
+}
+
+.p-footer {
+  background: lightgrey;
+  padding: 1rem;
+}
+
+.read-more {
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
 }

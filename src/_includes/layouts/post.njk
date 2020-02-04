@@ -18,17 +18,16 @@ layout: layouts/base.njk
   <div itemprop="articleBody" class="e-content">
     {{ content | safe }}
   </div>
-  <footer>
+
+  <footer class="p-footer">
     <div>
-      {% if avatars %}
-        {% for avatar in avatars %}
-          <img src="/_img/avatars.jpg" alt="Bassam Ismail" width="96" height="96" loading="lazy">
-        {% endfor %}
-      {% endif %}
-      <p>Posted by {{ metadata.author.name | markdown | safe }}.</p>
+      Bassam Ismail is a software engineer currently working as an Engineering Manager where he leads a team of front-end developers. He has been working remotely from Kashmir for the last 8 years.
     </div>
     {% if tweet %}
       <a href="https://twitter.com/skippednote/status/{{ tweet }}" class="retweet">Retweet this article!</a>
     {% endif %}
   </footer>
 </article>
+
+
+

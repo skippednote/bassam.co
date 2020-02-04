@@ -3,31 +3,30 @@ layout: layouts/base.njk
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting" class="h-entry">
   <header>
-    <h1 itemprop="headline" class="p-name">{{ title | markdown | safe }}</h1>
+    <h1 itemprop="headline" class="p-name"><a href="{{ external_url }}">{{ title | markdown | safe }}</a></h1>
     <p hidden class="p-summary hidden">{{ description}}</p>
-    <p class="meta">
-      Published <time datetime="{{ date | htmlDateString }}" itemprop="datePublished">{{ date | readableDate }}</time>
+    <p class="s-meta">
       {% if tags %}
-        · tagged with {% for tag in tags %}
+        {% for tag in tags %}
           <a href="/blog/tags/{{ tag | slug }}" class="tag">{{ tag }}</a>
         {% endfor %}
       {% endif %}
+      ·
+      <time datetime="{{ date | htmlDateString }}" itemprop="datePublished">{{ date | readableDate }}</time>
     </p>
   </header>
   <div itemprop="articleBody" class="e-content">
     {{ content | safe }}
   </div>
-  {# <footer>
-    <div>
-      {% if avatars %}
-        {% for avatar in avatars %}
-          <img src="/_img/avatars.jpg" alt="Bassam Ismail" width="96" height="96" loading="lazy">
-        {% endfor %}
-      {% endif %}
-      <p>Posted by {{ metadata.author.name | markdown | safe }}.</p>
+  <div class="read-more">
+    <a href="{{ external_url }}">Read more at {{ external_url | urlHost }} <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></a>
+  </div>
+    <footer class="p-footer">
+     <div>
+      Bassam Ismail is a software engineer currently working as an Engineering Manager where he leads a team of front-end developers. He has been working remotely from Kashmir for the last 8 years.
     </div>
     {% if tweet %}
       <a href="https://twitter.com/skippednote/status/{{ tweet }}" class="retweet">Retweet this article!</a>
     {% endif %}
-  </footer> #}
+  </footer>
 </article>

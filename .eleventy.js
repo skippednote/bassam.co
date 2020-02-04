@@ -1,3 +1,4 @@
+const URL = require('url');
 const { DateTime } = require('luxon');
 const he = require('he');
 const markdownIt = require('markdown-it');
@@ -68,6 +69,11 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addFilter('filterBlogPosts', array => {
     return array.filter(post => post.inputPath.startsWith('./src/blog/'));
+  });
+
+  eleventyConfig.addFilter('urlHost', url => {
+    const { hostname } = new URL.parse(url);
+    return hostname;
   });
 
   // eleventyConfig.addFilter("filterFeaturePosts", array => {
